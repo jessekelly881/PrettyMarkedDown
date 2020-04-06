@@ -1,12 +1,7 @@
 @import 'common/layouts/basic';
 @import 'common/components/all';
 
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700");
-
 body {
-    font-family: 'Source Sans Pro', Arial, sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333;
 }

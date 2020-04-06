@@ -1,9 +1,20 @@
 @import '../mixins/all';
 
+@include lineHeader;
+
 html, body{
     padding: 0;
     margin: 0;
 }
+
+.org-src-container{
+    text-align: center;
+}
+
+.src {
+    display: inline-block;
+    text-align: left;
+ }
 
 @media only screen and (min-width: 750px) /* Large screens */
 {
@@ -23,6 +34,10 @@ html, body{
         margin: 2em 10vw 1em 10vw;
     }
 
+    .src{
+        min-width: calc(750px * 0.8);
+    }
+
 }
 
 @media only screen and (max-width: 750px) /* Small screens */
@@ -39,6 +54,10 @@ html, body{
     h2 { // the centered header
         margin: 2em 5vw 1em 5vw;
     }
+
+    .src{
+        min-width: 80%;
+    }
 }
 
 
@@ -49,7 +68,6 @@ html, body{
 h3, h4, h5, h6, table {
     margin: 2em 0em 1em 0em;
 }
-@include lineHeader;
 
 // center top level headers
 .outline-2 > h2, #table-of-contents > h2{
