@@ -1,4 +1,6 @@
+$text-selection-color: purple !default;
+
 ::selection {
-    background-color: purple;
+    background-color: $text-selection-color;
     color: white;
 }
