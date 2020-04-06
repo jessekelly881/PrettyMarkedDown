@@ -61,6 +61,10 @@ table{
 }
 
 #postamble > p{
-    display: inline;
+    display: inline-block;
     font-size: var(--font-size-4);
+}
+
+.author + .date {
+    margin-left: 2rem;
 }
