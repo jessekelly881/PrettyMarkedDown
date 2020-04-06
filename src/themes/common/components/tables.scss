@@ -3,7 +3,8 @@ table {
     text-align: center;
     border-radius: 2px 2px 0 0;
     border-spacing: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.85);
+    border: 1px solid rgba(0, 0, 0, 0.85);
+    border-collapse: collapse;
 }
 
 
@@ -14,9 +15,9 @@ tr > td {
 }
 
 tr > td {
-  border-bottom: 1px solid #f0f0f0;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+
 }
 
 tr:hover > td {
