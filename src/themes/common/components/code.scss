@@ -1,0 +1,33 @@
+.src {
+    padding: 0.5rem 1rem 0.5rem;
+    font-size: 0.8rem;
+    background: rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 3px;
+
+    text-align: left;
+
+		font-family: "Courier New", monospace;
+    max-width: 100%;
+    overflow-x: auto;
+
+    .org-org-meta-line {
+        color: purple;
+    }
+
+    .org-keyword {
+        color: purple;
+    }
+
+    // .org-doc {
+    //     color: grey;
+    // }
+
+    .org-rainbow-delimiters-depth-1{
+        color: darken(purple, 10%);
+    }
+
+    .org-rainbow-delimiters-depth-2{
+        color: darken(purple, 20%);
+    }
+}

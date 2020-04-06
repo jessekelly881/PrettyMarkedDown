@@ -1,0 +1,20 @@
+.tag{
+    padding: 0;
+    display: block;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    span{
+        background: #f5f5f5;
+        text-transform: uppercase;
+        border-radius: 2px;
+        width: fit-content;
+        height: auto;
+        padding: 2px 7px;
+
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+}

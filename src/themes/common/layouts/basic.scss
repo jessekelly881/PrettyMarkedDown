@@ -1,0 +1,66 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (min-width: 750px) /* Large screens */
+{
+    .outline-3{
+        margin: 0vh 10vw;
+    }
+
+    .outline-text-2, #table-of-contents{
+        padding: 0vh 10vw;
+    }
+
+    .outline-text-3{
+        margin-left: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 750px) /* Small screens */
+{
+    .outline-3{
+        margin: 0vh 5vw;
+        display: block;
+    }
+
+    .outline-text-2, #table-of-contents{
+        padding: 0vh 5vw;
+    }
+}
+
+
+.title{
+   padding: 2vh 5vw;
+}
+
+h1, h2, h3, h4, h5, h6, table {
+    margin: 2em 0em 1em 0em;
+}
+
+// center top level headers
+.outline-2 > h2, #table-of-contents > h2{
+    text-align: center;
+}
+
+// center objects
+table{
+    margin: auto;
+}
+
+.tag{
+    margin-top: 0.5rem;
+}
+
+#postamble{
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+#postamble > p{
+    display: inline;
+    font-size: var(--font-size-4);
+}
