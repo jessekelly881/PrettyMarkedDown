@@ -1,0 +1,28 @@
+@mixin lineHeader() {
+
+    h2 {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        text-align: center;
+    }
+    h2:before, h2:after {
+        position: absolute;
+        top: 51%;
+        overflow: hidden;
+        width: 50%;
+        height: 2px;
+        -webkit-font-smoothing: antialiased;
+        content: '\a0';
+        background-color: rgba(0, 0, 0, 0.10);
+
+    }
+    h2:before {
+        margin-left: calc(-50% - 10px);
+    }
+
+    h2:after {
+        margin-left: calc(10px);
+    }
+
+}
