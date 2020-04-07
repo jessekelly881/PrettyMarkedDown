@@ -14,11 +14,11 @@ $normal-keyword-color: purple !default;
 
 
 @function cappedNth($list, $i){
-    @if $i < length($list){
+    @if $i <= length($list){
         @return nth($list, $i);
     }
     @else{
-        @return last($list);
+        @return nth($list, length($list));
     }
 }
 
@@ -26,8 +26,8 @@ $normal-keyword-color: purple !default;
  * Headers
 **/
 
-$header-sizes: 2rem, 1.5rem, 1.15rem, 1rem !default;
-$header-weights: 600 !default;
+$header-sizes: 2rem 1.5rem 1.15rem 1rem !default;
+$header-weights: 400,  !default;
 
 @for $i from 1 through 6 {
     h#{$i}{
