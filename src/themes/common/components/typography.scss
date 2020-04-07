@@ -1,7 +1,11 @@
-// variables
+/**
+ * Variables
+**/
+
 $link-color: purple !default;
 $body-text-color: rgba(0, 0, 0, 0.65) !default;
 $header-text-color: rgba(0, 0, 0, 0.90) !default;
+$blockquote-border-color: purple !default;
 
 $alert-keywords: todo, !default;
 $alert-keyword-color: #7D161A !default;
@@ -9,10 +13,28 @@ $normal-keywords: done, !default;
 $normal-keyword-color: purple !default;
 
 
-h1{ font-size: 2rem; }
-h2{ font-size: 1.5rem; }
-h3{ font-size: 1.15rem; }
-h4, h5, h6 { font-size: 1rem; }
+@function cappedNth($list, $i){
+    @if $i < length($list){
+        @return nth($list, $i);
+    }
+    @else{
+        @return last($list);
+    }
+}
+
+/**
+ * Headers
+**/
+
+$header-sizes: 2rem, 1.5rem, 1.15rem, 1rem !default;
+$header-weights: 600 !default;
+
+@for $i from 1 through 6 {
+    h#{$i}{
+        font-size: cappedNth($header-sizes, $i);
+    }
+}
+
 h1 > .subtitle{ font-size: 1.5rem; }
 
 h1, h2, h3, h4, h5, h6, thead {
@@ -62,7 +84,7 @@ code {
 
 
 blockquote{
-    border-left: 0.2rem solid purple;
+    border-left: 0.2rem solid $blockquote-border-color;
     padding-left: 1rem;
 		font-style: italic;
 }
@@ -80,6 +102,10 @@ a{
     text-decoration: underline;
 }
 
+
+/**
+ * Variables
+**/
 
 @each $keyword in $alert-keywords{
     .#{$keyword}{
