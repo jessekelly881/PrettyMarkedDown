@@ -1,4 +1,4 @@
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="themes/retro.scss" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="themes/metro.scss" />
 #+OPTIONS: num:nil html-style:nil
 
 #+Title: Retro

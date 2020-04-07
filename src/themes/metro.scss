@@ -18,7 +18,7 @@ $normal-keyword-color: $terciary-color;
 $alert-keyword-color: $primary-color;
 
 $header-sizes: 10rem, 2.5rem, 1.25rem;
-$header-weights: 800, 300;
+$header-weights: 800, 300, 400;
 
 @import 'common/layouts/centered';
 @import 'common/components/all';
@@ -109,4 +109,33 @@ h1{
 
 h1 > .subtitle {
     font-size: 1.5rem;
+}
+
+
+#table-of-contents{
+    background: yellow;
+    width: 500px;
+    opacity: 0.95;
+
+    position:absolute;
+    top: 20%;
+    right: 10%;
+    z-index:2;
+
+    #text-table-of-contents{
+        padding: 10%;
+        a{
+            color: black;
+        }
+    }
+    h2{
+        width: 100%;
+        text-align: left;
+        margin: 0;
+        padding: 10%
+    }
+}
+
+h2 {
+    text-align: center;
 }

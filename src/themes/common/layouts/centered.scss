@@ -16,6 +16,16 @@ html, body{
     margin: 0;
 }
 
+// remove bullets from table of contents
+#text-table-of-contents{
+    ul{
+        list-style-type: none;
+    }
+    .tag{
+        display: none;
+    }
+}
+
 .org-src-container{
     text-align: center;
 }
@@ -84,14 +94,16 @@ table{
     text-align: center;
     width: 100%;
     margin: 2rem 0;
-}
 
-#postamble > p{
-    display: inline-block;
-}
+    p{
+        display: inline-block;
+    }
 
-.author + .date {
-    margin-left: 2rem;
+    .author, .date, .validation {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
 }
 
 blockquote{
