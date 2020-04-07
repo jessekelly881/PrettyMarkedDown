@@ -53,12 +53,12 @@ body::after{
 
 
 #postamble {
-    background:rgba(246,247,146,0.9);
+    background: yellow;
     padding:1em 5%;
     width: 50%;
 }
 
-.outline-2 {
+.outline-2, #table-of-contents {
     background: white;
     margin-left: -10%;
     width: 95%;
@@ -112,27 +112,29 @@ h1 > .subtitle {
 }
 
 
-#table-of-contents{
-    background: yellow;
-    width: 500px;
-    opacity: 0.95;
+@media only screen and (min-width: 1800px){ // large screen - show toc as side element
+    #table-of-contents{
+        background: yellow;
+        width: 500px;
+        opacity: 0.95;
 
-    position:absolute;
-    top: 20%;
-    right: 10%;
-    z-index:2;
+        position:absolute;
+        top: 10%;
+        right: 5%;
+        z-index:2;
 
-    #text-table-of-contents{
-        padding: 10%;
-        a{
-            color: black;
+        #text-table-of-contents{
+            padding: 10%;
+            a{
+                color: black;
+            }
         }
-    }
-    h2{
-        width: 100%;
-        text-align: left;
-        margin: 0;
-        padding: 10%
+        h2{
+            width: 100%;
+            text-align: left;
+            margin: 0;
+            padding: 10%
+        }
     }
 }
 
