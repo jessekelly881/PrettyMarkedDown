@@ -1,3 +1,5 @@
+@import 'common/selector';
+
 // set variables
 $primary-color: red;
 
@@ -6,6 +8,7 @@ $body-text-color: rgba(0,0,0,0.9);
 $link-color: $primary-color;
 $code-highlight-color: red;
 $tag-bg-color: #daede2;
+
 
 // layout
 @import 'common/layouts/centered';
