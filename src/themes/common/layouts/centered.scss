@@ -44,11 +44,6 @@ html, body{
     h2 { // the centered header
         margin: 2em 10vw 1em 10vw;
     }
-
-    .src{
-        min-width: calc(750px * 0.8);
-    }
-
 }
 
 @media only screen and (max-width: 750px) /* Small screens */
@@ -64,10 +59,6 @@ html, body{
 
     h2 { // the centered header
         margin: 2em 5vw 1em 5vw;
-    }
-
-    .src{
-        min-width: 80%;
     }
 }
 

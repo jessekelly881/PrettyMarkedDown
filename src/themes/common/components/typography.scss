@@ -32,12 +32,16 @@ $header-weights: 600 !default;
 @for $i from 1 through 6 {
     h#{$i}{
         font-size: cappedNth($header-sizes, $i);
+        font-weight: cappedNth($header-weights, $i);
+        color: $header-text-color;
     }
 }
 
-h1 > .subtitle{ font-size: 1.5rem; }
+h1 > .subtitle{
+    font-size: cappedNth($header-sizes, 2);
+}
 
-h1, h2, h3, h4, h5, h6, thead {
+thead {
     color: $header-text-color;
 }
 
