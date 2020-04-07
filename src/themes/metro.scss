@@ -20,6 +20,7 @@ $normal-keyword-color: $terciary-color;
 $alert-keyword-color: $primary-color;
 
 $header-sizes: 10rem, 2.5rem, 1.25rem;
+$header-weights: 800, 300;
 
 @import 'common/layouts/centered';
 @import 'common/components/all';
@@ -52,10 +53,6 @@ body::after{
     z-index:1;
 }
 
-
-h2, h3 {
-    font-weight: 300;
-}
 
 #postamble {
     background:rgba(246,247,146,0.9);
@@ -103,7 +100,6 @@ h2, h3 {
 
 h1{
     color: white;
-    font-weight: 800;
     margin-bottom: 0.0em;
 
     .subtitle{
