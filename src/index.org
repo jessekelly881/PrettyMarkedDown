@@ -1,4 +1,4 @@
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="retro.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="themes/retro.scss" />
 #+OPTIONS: num:nil html-style:nil
 
 #+Title: Retro
@@ -98,6 +98,6 @@ Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel t
 
 * COMMENT Local Variables
   # Local Variables:
+  # org-html-head-include-scripts: nil
   # org-html-htmlize-output-type: css
-  # eval: (add-hook 'after-save-hook 'org-html-export-to-html nil t)
   # End:
