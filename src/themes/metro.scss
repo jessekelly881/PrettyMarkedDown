@@ -2,12 +2,17 @@
 
 // set variables
 $primary-color: red;
+$secondary-color: #daede2;
+$terciary-color: #77c4d3;
 
 $text-selection-color: $primary-color;
 $body-text-color: rgba(0,0,0,0.9);
 $link-color: $primary-color;
 $code-highlight-color: red;
-$tag-bg-color: #daede2;
+$tag-bg-color: $secondary-color;
+
+$normal-keyword-color: $terciary-color;
+$alert-keyword-color: $primary-color;
 
 
 // layout

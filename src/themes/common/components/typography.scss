@@ -3,6 +3,11 @@ $link-color: purple !default;
 $body-text-color: rgba(0, 0, 0, 0.65) !default;
 $header-text-color: rgba(0, 0, 0, 0.90) !default;
 
+$alert-keywords: todo, !default;
+$alert-keyword-color: #7D161A !default;
+$normal-keywords: done, !default;
+$normal-keyword-color: purple !default;
+
 
 h1{ font-size: 2rem; }
 h2{ font-size: 1.5rem; }
@@ -77,12 +82,16 @@ a{
 }
 
 
-.todo{
-    color: #7D161A;
-		font-weight: 600;
+@each $keyword in $alert-keywords{
+    .#{$keyword}{
+        color: $alert-keyword-color;
+		    font-weight: 600;
+    }
 }
 
-.done{
-    color: purple;
-		font-weight: 600;
+@each $keyword in $normal-keywords{
+    .#{$keyword}{
+        color: $normal-keyword-color;
+		    font-weight: 600;
+    }
 }

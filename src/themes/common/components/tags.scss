@@ -9,7 +9,7 @@
 $tag-selectors: '.tag' 'span', ;
 
 $tag-bg-color: #f5f5f5 !default;
-$tag-border-color: darken($tag-bg-color, 10%);
+$tag-border-color: darken($tag-bg-color, 15%);
 
 
 @each $selector in $tag-selectors {
