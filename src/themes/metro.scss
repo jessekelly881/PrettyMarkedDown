@@ -1,0 +1,108 @@
+// set variables
+$primary-color: red;
+
+$text-selection-color: $primary-color;
+$body-text-color: rgba(0,0,0,0.9);
+$link-color: $primary-color;
+$code-highlight-color: red;
+$tag-bg-color: #daede2;
+
+// layout
+@import 'common/layouts/centered';
+@import 'common/components/all';
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+
+html {
+    background: #daede2;
+    padding:5%;
+}
+body {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+
+    background: #77c4d3;
+    width: 90%;
+    color: white;
+    padding-top: 1em;
+}
+
+body::after{
+    content: "";
+    background:rgba(51,55,69,0.9);
+    bottom:0;
+    right:0;
+    position:fixed;
+    top:0;
+    width:20%;
+    z-index:1;
+}
+
+
+h2, h3 {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+}
+
+#postamble {
+    background:rgba(246,247,146,0.9);
+    padding:1em 5%;
+    width: 50%;
+}
+
+.outline-2 {
+    background: white;
+    margin-left: -10%;
+    width: 95%;
+    padding: 1em;
+    margin-top: 5%;
+    opacity: 0.92;
+}
+
+.src{
+    font-size: 1rem;
+}
+
+
+@media only screen and (max-width: 750px){ /* Small screens */
+    body{
+        width: 100%;
+        &::after{
+            display: none;
+        }
+    }
+    html{
+        padding-right: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 550px){ /* Small screens */
+    html{
+        padding: 0px;
+    }
+
+    .outline-2 {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+h1{
+    color: white;
+    font-size: 10rem;
+    font-weight: 700;
+    margin-bottom: 0.0em;
+
+    .subtitle{
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+}

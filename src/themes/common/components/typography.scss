@@ -1,5 +1,7 @@
 // variables
-$link-color: purple;
+$link-color: purple !default;
+$body-text-color: rgba(0, 0, 0, 0.65) !default;
+$header-text-color: rgba(0, 0, 0, 0.90) !default;
 
 
 h1{ font-size: 2rem; }
@@ -9,12 +11,12 @@ h4, h5, h6 { font-size: 1rem; }
 h1 > .subtitle{ font-size: 1.5rem; }
 
 h1, h2, h3, h4, h5, h6, thead {
-    color: rgba(0, 0, 0, 0.90);
+    color: $header-text-color;
     font-weight: 400;
 }
 
 p, pre, ol, ul, tbody, code{
-    color: rgba(0, 0, 0, 0.65);
+    color: $body-text-color;
 }
 
 ul, ol {

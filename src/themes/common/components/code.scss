@@ -1,3 +1,8 @@
+$code-highlight-color: purple !default;
+$code-keyword-color: $code-highlight-color !default;
+$code-delim-1-color: darken($code-highlight-color, 10%) !default;
+$code-delim-2-color: darken($code-highlight-color, 20%) !default;
+
 .src {
     padding: 0.5rem 1rem 0.5rem;
     font-size: 0.9rem;
@@ -11,11 +16,11 @@
     overflow-x: auto;
 
     .org-org-meta-line {
-        color: purple;
+        color: $code-keyword-color;
     }
 
     .org-keyword {
-        color: purple;
+        color: $code-keyword-color;
     }
 
     // .org-doc {
@@ -23,10 +28,10 @@
     // }
 
     .org-rainbow-delimiters-depth-1{
-        color: darken(purple, 10%);
+        color: $code-delim-1-color;
     }
 
     .org-rainbow-delimiters-depth-2{
-        color: darken(purple, 20%);
+        color: $code-delim-2-color;
     }
 }
